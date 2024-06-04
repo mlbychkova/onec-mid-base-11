@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3395c284-f1a9-4aa7-acf6-9e0816c54ce7">
+  <producedTypes>
+    <objectType typeId="295b4ad8-447e-4f6a-b8e8-4d2b9289cfc9" valueTypeId="2577aefd-6d16-4e39-842f-238f266f6523"/>
+    <refType typeId="b88c0327-03ef-4ced-98b8-2ba51012a3dc" valueTypeId="645262a8-9ab0-4678-a3c0-b17eab7f24a7"/>
+    <selectionType typeId="2b96b34f-a4f0-4e55-b0b6-7a23f1eaf4d8" valueTypeId="492e6fb0-4613-4acd-9aea-269d7cf04ae7"/>
+    <listType typeId="3e263c15-3f5c-4ca1-b038-174930b27200" valueTypeId="0edf77dc-fbfa-481e-ada8-1ba6c2320136"/>
+    <managerType typeId="7fbfc944-b51e-43fe-9a13-2789b628db23" valueTypeId="6f360e2a-183b-49a6-8a0d-210914ad7873"/>
+  </producedTypes>
+  <name>ДЗР_КонтактныеЛицаКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>ДЗР контактные лица контрагентов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ДЗР_КонтактныеЛицаКонтрагентов.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ДЗР_КонтактныеЛицаКонтрагентов.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Контрагенты</owners>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="386a8c2d-f559-4a8d-a149-8636448dd03c">
+    <name>КонтактныйТелефон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контактный телефон</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4f25a436-5444-4c9a-8eca-0f94a4fd7d65">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДЗР_ДолжностиКонтактныхЛицКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0d1dff78-380c-4e4f-b4b2-4c434eeef1ff">
+    <name>ДействуетНаОсновании</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действует на основании</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d99f0433-a389-4e94-8736-6e88ab4884d1">
+    <name>Заметка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заметка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
